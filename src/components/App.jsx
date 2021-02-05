@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
-  var count = 0;
+  const state = useState(0);
 
   function increase() {
-    count++;
+    // count++;
   }
 
   return (
     <div className="container">
-      <h1>{count}</h1>
+      <h1>{state[0]}</h1>
       <button onClick={increase}>+</button>
     </div>
   );
