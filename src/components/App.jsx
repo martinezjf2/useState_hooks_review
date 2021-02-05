@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  const state = useState(0);
+  const [count] = useState(0);
 
   function increase() {
     // count++;
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>{state[0]}</h1>
+      <h1>{count}</h1>
       <button onClick={increase}>+</button>
     </div>
   );
